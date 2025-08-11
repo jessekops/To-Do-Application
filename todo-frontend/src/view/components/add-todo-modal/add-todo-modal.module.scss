@@ -1,17 +1,30 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
 .modal {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
-  gap: 1rem
+  padding: 2rem 5rem;
+  gap: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .input {
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border: 1px solid white;
   border-radius: 4px;
 }
 
@@ -19,4 +32,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }

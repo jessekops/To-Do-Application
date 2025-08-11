@@ -12,7 +12,6 @@ export function useTodos() {
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<Error | null>(null);
 
-    // Todos ophalen
     const fetchTodos = useCallback(async () => {
         setLoading(true);
         setError(null);
@@ -30,7 +29,6 @@ export function useTodos() {
         fetchTodos();
     }, [fetchTodos]);
 
-    // Nieuwe todo toevoegen
     const addTodo = async (title: string) => {
         setLoading(true);
         setError(null);
@@ -44,7 +42,6 @@ export function useTodos() {
         }
     };
 
-    // Todo afronden
     const markComplete = async (id: string) => {
         setLoading(true);
         setError(null);
