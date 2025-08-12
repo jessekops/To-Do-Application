@@ -9,7 +9,7 @@ type TodoItemProps = {
     disabled?: boolean;
 };
 
-const TodoItem: React.FC<TodoItemProps> = ({ id, title, done, onToggle, disabled }) => {
+const TodoItem: React.FC<TodoItemProps> = ({id, title, done, onToggle, disabled}) => {
     return (
         <li
             className={`${css.item} ${done ? css.checked : css.unchecked}`}
